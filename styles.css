@@ -27,7 +27,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .first {
-    background-image: linear-gradient(to bottom, rgba(9, 47, 51, 0.8), rgba(8, 29, 31, 0.7)), url("first.jpg");
+    background-image: linear-gradient(to bottom, rgba(9, 47, 51, 0.8), rgba(8, 29, 31, 0.7)), url("images/first.jpg");
     height: 723px;
     display: flex;
     flex-direction: column;
