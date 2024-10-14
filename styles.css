@@ -95,8 +95,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .second img {
-    height: 550px;
-    width: 550px;
+    height: 100%;
+    width: 100%;
+    max-width: 550px;
     background-position: center;
     background-size: cover;
 }
@@ -107,16 +108,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     line-height: 1.23;
 }
 
-.third-one {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 80px;
-    gap: 30px;
-    text-align: center;
-}
-
-.third-sec {
+.third-one, .third-sec, .third-third {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,25 +117,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     text-align: left;
 }
 
-.third-third {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 80px;
-    gap: 30px;
-    text-align: left;
-}
-
-.third-one img {
-    width: 500px;
-}
-
-.third-sec img {
-    width: 500px;
-}
-
-.third-third img {
-    width: 500px;
+.third-one img, .third-sec img, .third-third img {
+    width: 100%;
+    max-width: 500px;
 }
 
 .fourth h1 {
@@ -175,4 +151,58 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-weight: bold;
     background-color: #5E4842;
     height: 80px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .first {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .first h1 {
+        font-size: 40px;
+    }
+
+    .first h3 {
+        font-size: 18px;
+    }
+
+    .second {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .second img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .third {
+        padding: 20px;
+    }
+
+    .third-one, .third-sec, .third-third {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .list p {
+        width: auto;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
 }
