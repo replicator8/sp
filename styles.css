@@ -128,16 +128,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 50px;
     font-size: 16px;
     line-height: 1.35;
 }
 
-.list p {
-    width: 300px;
-    text-align: left;
-    font-weight: bold;
+.list li {
+    list-style-type: circle;
+    width: auto;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
 }
 
 .footer {
@@ -153,12 +155,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     height: 80px;
 }
 
-/* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
     .first {
-        height: auto;
+        height: 500px;
         padding: 20px;
         text-align: center;
+        width: 100%; 
+        background-size: cover;
     }
 
     .first h1 {
@@ -198,8 +201,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         text-align: center;
     }
 
-    .list p {
+    .list li {
+        list-style-type: circle;
         width: auto;
+        padding-left: 30px;
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
     }
 
     .footer {
